@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Store</title>
+  <link rel="stylesheet" href="DesignCSS.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#" id="account-tab" class="active-tab">Account</a></li>
+        <li><a href="#" id="catalog-tab" style="display: none;">Game Catalog</a></li>
+        <li><a href="#" id="library-tab" style="display: none;">Wishlist</a></li>
+        <li><a href="#" id="user-info-tab" style="display: none;">User Information</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="account">
+      <nav class="sub-tabs">
+        <ul>
+          <li><a href="#" id="login-tab" class="active-sub-tab">Login</a></li>
+          <li><a href="#" id="create-account-tab">Create Account</a></li>
+        </ul>
+      </nav>
+    
+      <section id="login-section">
+        <h2>Login</h2>
+        <form id="login-form">
+          <label for="login-username">Username:</label>
+          <input type="text" id="login-username" name="login-username" required>
+    
+          <label for="login-password">Password:</label>
+          <input type="password" id="login-password" name="login-password" required>
+    
+          <button type="submit">Login</button>
+        </form>
+      </section>
+    
+      <section id="create-account-section" style="display: none;">
+        <h2>Create Account</h2>
+        <form id="create-account-form">
+          <label for="first-name">First Name:</label>
+          <input type="text" id="first-name" name="first-name" required>
+    
+          <label for="last-name">Last Name:</label>
+          <input type="text" id="last-name" name="last-name" required>
+    
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+    
+          <label for="new-username">Username:</label>
+          <input type="text" id="new-username" name="new-username" required>
+    
+          <label for="new-password">Password:</label>
+          <input type="password" id="new-password" name="new-password" required>
+    
+          <label for="confirm-password">Confirm Password:</label>
+          <input type="password" id="confirm-password" name="confirm-password" required>
+    
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" min="18" max="120" required>
+    
+          <button type="submit">Create Account</button>
+        </form>
+      </section>
+    </section>
+
+    <section id="game-catalog" style="display: none;">
+      <h2>Game Catalog</h2>
+      <div class="search-container">
+        <input type="text" id="game-search" placeholder="Search games...">
+        <button id="search-btn">Search</button>
+      </div>
+      <div class="filter-container">
+        <h3>Filter by:</h3>
+        <div id="genre-filter"></div>
+        <div id="age-rating-filter"></div>
+      </div>
+      <div class="game-grid">
+        <!-- Game cards will be dynamically generated here -->
+      </div>
+    </section>
+
+    <section id="user-library" style="display: none;">
+      <h2>Wishlist</h2>
+      <div class="game-grid">
+        <!-- User's game cards will be displayed here -->
+      </div>
+    </section>
+
+    <section id="user-info" style="display: none;">
+      <h2>User Information</h2>
+      <form id="user-info-form">
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" required>
+
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <button type="submit">Update</button>
+        <button type="button" id="delete-account">Delete Account</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Game Store</p>
+  </footer>
+
+  <script src="HeartofSteamClone.js"></script>
+</body>
+</html> 

@@ -1,0 +1,289 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Press Start 2P', monospace;
+  background: linear-gradient(to bottom, #0c1324, #2b3b5a);
+  color: #d1d1d1;
+}
+
+header {
+  background-color: #1b1b1b;
+  padding: 1rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #d1d1d1;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  transition: color 0.3s ease-in-out;
+}
+
+nav ul li a.active-tab {
+  color: #00ffff;
+  font-weight: bold;
+  text-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+}
+
+nav ul li a:hover {
+  color: #00ffff;
+}
+
+main {
+  padding: 2rem;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.search-container input {
+  background-color: #1b1b1b;
+  color: #d1d1d1;
+  border: 1px solid #00ffff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+}
+
+.search-container button {
+  background-color: #00ffff;
+  color: #1b1b1b;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.search-container button:hover {
+  background-color: #00cccc;
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.game-card {
+  background-color: #1b1b1b;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.game-card:hover {
+  transform: scale(1.05);
+}
+
+.game-card-content {
+  padding: 1rem;
+}
+
+.game-card-content h3 {
+  font-size: 1.2rem;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.game-card-content p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.game-card-content button {
+  background-color: #00ffff;
+  color: #1b1b1b;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.game-card-content button:hover {
+  background-color: #00cccc;
+}
+
+.library-game-card {
+  background-color: #1b1b1b;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.library-game-card h3 {
+  font-size: 1.2rem;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.library-game-card p {
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+
+.library-game-card button {
+  background-color: #00ffff;
+  color: #1b1b1b;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.library-game-card button:hover {
+  background-color: #00cccc;
+}
+
+#user-info-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+#user-info-form input {
+  background-color: #1b1b1b;
+  color: #d1d1d1;
+  border: 1px solid #00ffff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+#user-info-form button {
+  background-color: #00ffff;
+  color: #1b1b1b;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#user-info-form button:hover {
+  background-color: #00cccc;
+}
+
+#account {
+  padding: 2rem;
+}
+
+.sub-tabs {
+  background-color: #1b1b1b;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+}
+
+.sub-tabs ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.sub-tabs ul li {
+  margin: 0 1rem;
+}
+
+.sub-tabs ul li a {
+  color: #d1d1d1;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  transition: color 0.3s ease-in-out;
+}
+
+.sub-tabs ul li a.active-sub-tab {
+  color: #00ffff;
+  font-weight: bold;
+  text-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+}
+
+.sub-tabs ul li a:hover {
+  color: #00ffff;
+}
+
+#login-section,
+#create-account-section {
+  background-color: #1b1b1b;
+  border-radius: 0 0 4px 4px;
+  padding: 2rem;
+}
+
+#login-section form,
+#create-account-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#login-section form label,
+#create-account-section form label {
+  margin-bottom: 0.5rem;
+}
+
+#login-section form input,
+#create-account-section form input {
+  background-color: #1b1b1b;
+  color: #d1d1d1;
+  border: 1px solid #00ffff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+#login-section form button,
+#create-account-section form button {
+  background-color: #00ffff;
+  color: #1b1b1b;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#login-section form button:hover,
+#create-account-section form button:hover {
+  background-color: #00cccc;
+}
+
+footer {
+  background-color: #1b1b1b;
+  color: #d1d1d1;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.8rem;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
